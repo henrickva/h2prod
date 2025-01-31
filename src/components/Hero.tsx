@@ -1,6 +1,6 @@
 import { ChevronDown } from 'lucide-react';
 import foto from '../../assets/logoH2.png';
-import foto2 from '../../assets/teste1.png'
+import foto2 from '../../assets/teste4.png'
 
 
 export default function Hero() {

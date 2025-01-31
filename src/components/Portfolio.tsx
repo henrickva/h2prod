@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Banners Redes Sociais',
     category:'Apresetando de forma rápida',
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
+    image:'../../assets/teste3.png',
     description: 'Estratégia digital para lançamento de produto'
   },
   {
