@@ -1,12 +1,12 @@
 import { ChevronDown } from 'lucide-react';
-
+import foto from '../../assets/logoH2.png'
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-zinc-800">
       <div className="absolute inset-0 bg-[url('assets/teste1.png')] bg-cover bg-center opacity-10"></div>
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <img className='m-auto my-2 w-1/3'src='assets/logoH2.png'/>
+        <img className='m-auto my-2 w-1/3'src={foto}/>
         <h1 className="text-6xl md:text-7xl font-bold  text-white uppercase">
          Produções
         </h1>
