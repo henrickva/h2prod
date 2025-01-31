@@ -1,4 +1,6 @@
-import { Mail, Phone,  Linkedin, X } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
+import { FaXTwitter } from "react-icons/fa6"
+import { RiTelegram2Fill } from "react-icons/ri";
 
 export default function Contact() {
   return (
@@ -57,13 +59,13 @@ export default function Contact() {
             <div>
               <h3 className="text-xl font-semibold text-white mb-4">Informações de Contato</h3>
               <div className="space-y-4">
-                <a href="mailto:contato@h2productions.com" className="flex items-center text-gray-400 hover:text-red-500 transition-colors">
+                <a href="mailto:hk.prod23@gmail.com" className="flex items-center text-gray-400 hover:text-red-500 transition-colors">
                   <Mail className="w-5 h-5 mr-3" />
-                  contato@h2productions.com
+                  E-mail
                 </a>
                 <a href="tel:+5524992547460" className="flex items-center text-gray-400 hover:text-red-500 transition-colors">
                   <Phone className="w-5 h-5 mr-3" />
-                  (24) 99254-7460
+                  Celular
                 </a>
               </div>
             </div>
@@ -71,11 +73,11 @@ export default function Contact() {
             <div>
               <h3 className="text-xl font-semibold text-white mb-4">Redes Sociais</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                  <Linkedin className="w-6 h-6" />
+                <a target='_blank' href="https://t.me/hk2098" className="text-gray-400 hover:text-red-500 transition-colors">
+                  <RiTelegram2Fill className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
-                  <X className="w-6 h-6" />
+                <a target='_blank' href="https://x.com/hk2design" className="text-gray-400 hover:text-red-500 transition-colors">
+                  <FaXTwitter className="w-6 h-6" />
                 </a>
               </div>
             </div>

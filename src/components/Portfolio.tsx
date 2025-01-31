@@ -3,26 +3,26 @@ import { X } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Redesign E-commerce',
-    category: 'UI/UX Design',
+    title: 'Sites',
+    category:'Mostrando ao publico pra que veio',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
     description: 'Redesign completo da experiência de compra online'
   },
   {
-    title: 'Campanha Digital',
-    category: 'Marketing',
+    title: 'Banners Redes Sociais',
+    category:'Apresetando de forma rápida',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
     description: 'Estratégia digital para lançamento de produto'
   },
   {
-    title: 'App Mobile',
-    category: 'Desenvolvimento',
+    title: 'Prévias de Video',
+    category: 'Dando alguns spoilers',
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop',
     description: 'Aplicativo mobile para gestão empresarial'
   },
   {
-    title: 'Identidade Visual',
-    category: 'Branding',
+    title: 'Catálogos',
+    category: 'Apresentando seus serviços',
     image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=2070&auto=format&fit=crop',
     description: 'Criação de marca para startup de tecnologia'
   }

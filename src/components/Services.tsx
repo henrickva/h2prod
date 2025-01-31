@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Palette, Globe, Laptop, Camera, Code, Megaphone } from 'lucide-react';
+import { Palette, Globe, Laptop, Camera } from 'lucide-react';
+import { FaVideo } from "react-icons/fa";
 
 const services = [
   {
     icon: <Palette className="w-8 h-8" />,
-    title: 'Logos',
+    title: 'Designs em Geral',
     description: 'Criação de identidade visual única e memorável para sua marca',
     incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
   },
@@ -15,27 +16,15 @@ const services = [
     incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
   },
   {
-    icon: <Laptop className="w-8 h-8" />,
-    title: 'UI/UX Design',
+    icon: <FaVideo className="w-8 h-8" />,
+    title: 'Edições de Video',
     description: 'Interfaces intuitivas e experiências de usuário excepcionais',
     incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
   },
   {
     icon: <Camera className="w-8 h-8" />,
-    title: 'Produção Visual',
+    title: 'Fotografia',
     description: 'Conteúdo visual de alta qualidade para suas campanhas',
-    incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
-  },
-  {
-    icon: <Code className="w-8 h-8" />,
-    title: 'Desenvolvimento',
-    description: 'Soluções tecnológicas sob medida para seu negócio',
-    incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
-  },
-  {
-    icon: <Megaphone className="w-8 h-8" />,
-    title: 'Marketing Digital',
-    description: 'Estratégias eficientes para alcançar seu público-alvo',
     incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
   }
 ];
@@ -43,7 +32,7 @@ const services = [
 export default function Services() {
   const [selectedService, setSelectedService] = useState<number | null>(null);
   return (
-    <div className="bg-zinc-950 py-20 px-4">
+    <div id='serviços' className="bg-zinc-950 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-600">
           Nossos Serviços
@@ -52,7 +41,7 @@ export default function Services() {
           Oferecemos soluções completas para transformar sua presença digital
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-zinc-800 p-6 rounded-lg hover:bg-gray-750 transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-red-500 mb-4">{service.icon}</div>

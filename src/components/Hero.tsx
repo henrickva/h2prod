@@ -2,6 +2,7 @@ import { ChevronDown } from 'lucide-react';
 import foto from '../../assets/logoH2.png';
 import foto2 from '../../assets/teste1.png'
 
+
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black to-zinc-800">
@@ -15,9 +16,11 @@ export default function Hero() {
         <p className="text-zinc-300 text-xl md:text-2xl mb-8">
           O design +18 de uma forma que você nunca viu
         </p>
+        <a href='#serviços'>
         <button className="bg-black hover:bg-gradient-to-r ease-in-out from-red-400 to-orange-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
           Conheça nosso trabalho
         </button>
+        </a>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
