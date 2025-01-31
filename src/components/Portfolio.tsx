@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import test2 from '../../assets/teste3.png';
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
   {
     title: 'Banners Redes Sociais',
     category:'Apresetando de forma rápida',
-    image:'../../assets/teste3.png',
+    image: test2,
     description: 'Estratégia digital para lançamento de produto'
   },
   {
