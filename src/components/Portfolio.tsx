@@ -69,7 +69,7 @@ export default function Portfolio() {
 
       {selectedProject && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4">
-          <div className="bg-gray-900 rounded-lg max-w-2xl w-full p-6 relative">
+          <div className="bg-zinc-900 rounded-lg max-w-2xl w-full p-6 relative">
             <button
               onClick={() => setSelectedProject(null)}
               className="absolute top-4 right-4 text-gray-400 hover:text-white"
@@ -82,8 +82,8 @@ export default function Portfolio() {
               className="w-full h-64 object-cover rounded-lg mb-4"
             />
             <h3 className="text-2xl font-bold text-white mb-2">{selectedProject.title}</h3>
-            <p className="text-purple-400 mb-4">{selectedProject.category}</p>
-            <p className="text-gray-400">{selectedProject.description}</p>
+            <p className="text-red-500 mb-4">{selectedProject.category}</p>
+            <p className="text-zinc-400">{selectedProject.description}</p>
           </div>
         </div>
       )}
