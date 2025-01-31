@@ -61,7 +61,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5 mr-3" />
                   contato@h2productions.com
                 </a>
-                <a href="tel:+5511999999999" className="flex items-center text-gray-400 hover:text-red-500 transition-colors">
+                <a href="tel:+5524992547460" className="flex items-center text-gray-400 hover:text-red-500 transition-colors">
                   <Phone className="w-5 h-5 mr-3" />
                   (24) 99254-7460
                 </a>
