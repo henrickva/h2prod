@@ -6,8 +6,8 @@ const services = [
   {
     icon: <Palette className="w-8 h-8" />,
     title: 'Designs em Geral',
-    description: 'Criação de identidade visual única e memorável para sua marca',
-    incard:'Aqui vai um texto um pouco mais elaborado, esse vai servir apenas pra eu ver'
+    description: 'Criação de banners, capas e logos para seu perfil ficar da hora',
+    incard:'No mundo digital em que vivemos, a identidade visual de uma marca é um dos elementos mais importantes para se destacar e conquistar o público. É aí que entra o meu trabalho: criar banners e logos que não apenas chamem a atenção, mas também transmitam a essência da sua marca de forma clara e impactante. No mundo digital em que vivemos, a identidade visual de uma marca é um dos elementos mais importantes para se destacar e conquistar o público. É aí que entra o meu trabalho: criar banners e logos que não apenas chamem a atenção, mas também transmitam a essência da sua marca de forma clara e impactante. No mundo digital em que vivemos, a identidade visual de uma marca é um dos elementos mais importantes para se destacar e conquistar o público. É aí que entra o meu trabalho: criar banners e logos que não apenas chamem a atenção, mas também transmitam a essência da sua marca de forma clara e impactante. No mundo digital em que vivemos, a identidade visual de uma marca é um dos elementos mais importantes para se destacar e conquistar o público. É aí que entra o meu trabalho: criar banners e logos que não apenas chamem a atenção, mas também transmitam a essência da sua marca de forma clara e impactante.'
   },
   {
     icon: <Globe className="w-8 h-8" />,
@@ -61,13 +61,7 @@ export default function Services() {
       {/* Modal */}
       {selectedService !== null && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-zinc-800 rounded-lg max-w-md w-full relative p-6">
-            <button
-              onClick={() => setSelectedService(null)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
-            >
-              ✕
-            </button>
+          <div className=" bg-zinc-800 rounded-lg max-w-md w-full h-[80vh] scrollbar flex flex-col relative p-6 overflow-y-auto">
             <div className="text-red-500 text-4xl mb-4">
               {services[selectedService].icon}
             </div>
