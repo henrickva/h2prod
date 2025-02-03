@@ -1,13 +1,22 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import test2 from '../../assets/teste3.png';
+import test2 from '../../assets/maryanaSite.png';
+import test3 from '../../assets/sevenSite.png';
+import test4 from '../../assets/mirandaSite.png'
 
 const projects = [
   {
     title: 'Sites',
     category:'Mostrando ao publico pra que veio',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
-    description: 'Redesign completo da experiência de compra online'
+    description: 'Clique na imagem para ser redirecionado para o site',
+    link:'https://dommeseventrix.vercel.app/',
+    link2:'https://rainhamaryana.vercel.app/',
+    link3:'https://rainhamiranda.vercel.app/',
+    image1: test3,
+    image2: test2,
+    image3: test4,
+    
   },
   {
     title: 'Banners Redes Sociais',
@@ -59,6 +68,7 @@ export default function Portfolio() {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
                     <p className="text-gray-300">{project.category}</p>
+                    
                   </div>
                 </div>
               </div>
@@ -69,21 +79,38 @@ export default function Portfolio() {
 
       {selectedProject && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4">
-          <div className="bg-zinc-900 rounded-lg max-w-2xl w-full p-6 relative">
+          <div className="bg-zinc-800 rounded-lg max-w-md w-full h-[80vh] scrollbar flex flex-col relative p-6 overflow-y-auto">
             <button
               onClick={() => setSelectedProject(null)}
               className="absolute top-4 right-4 text-gray-400 hover:text-white"
             >
               <X className="w-6 h-6" />
             </button>
-            <img
-              src={selectedProject.image}
-              alt={selectedProject.title}
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
             <h3 className="text-2xl font-bold text-white mb-2">{selectedProject.title}</h3>
-            <p className="text-red-500 mb-4">{selectedProject.category}</p>
-            <p className="text-zinc-400">{selectedProject.description}</p>
+            <p className='my-4'>{selectedProject.description ? selectedProject.description : selectedProject.title }</p>
+            <div className='grid grid-cols-1 gap-8'>
+              <a target='_blank' href={selectedProject.link ? selectedProject.link : selectedProject.image}>
+                <img
+                  src={selectedProject.image1}
+                  alt={selectedProject.title}
+                  className="w-full h-64 object-cover rounded-lg mb-4"
+                />
+              </a>
+              <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+                <img
+                  src={selectedProject.image2}
+                  alt={selectedProject.title}
+                  className="w-full h-64 object-cover rounded-lg mb-4"
+                />
+              </a>
+              <a target='_blank' href={selectedProject.link3 ? selectedProject.link3 : selectedProject.image}>
+                <img
+                  src={selectedProject.image3}
+                  alt={selectedProject.title}
+                  className="w-full h-64 object-cover rounded-lg mb-4"
+                />
+              </a>
+             </div>
           </div>
         </div>
       )}

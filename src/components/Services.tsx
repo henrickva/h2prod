@@ -108,7 +108,7 @@ export default function Services() {
     <div id='serviços' className="bg-zinc-950 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-600">
-          Nossos Serviços
+          Meus Serviços
         </h2>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
           Aqui você pode ver os serviços que ofereço e caso encontre algo que tenha interesse, basta preencher o formulário no final da página pedindo por um orçamento.
