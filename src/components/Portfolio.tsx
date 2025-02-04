@@ -4,7 +4,7 @@ import test1 from '../../assets/teste3.png';
 import test2 from '../../assets/maryanaSite.png';
 import test3 from '../../assets/sevenSite.png';
 import test4 from '../../assets/mirandaSite.png'
-
+import portif from '../../assets/bannerHeather.png'
 const projects = [
   {
     title1: 'Sites',
@@ -24,7 +24,10 @@ const projects = [
     category:'Apresetando de forma rápida',
     image: test2,
     description: 'Estratégia digital para lançamento de produto',
-    image1: test3,
+    link:test3,
+    link2:test2,
+    link3:test4,
+    image1: portif,
     image2: test2,
     image3: test4,
   },
@@ -97,21 +100,21 @@ export default function Portfolio() {
                 <img
                   src={selectedProject.image1}
                   alt={selectedProject.title}
-                  className="w-full h-64 object-cover rounded-lg mb-4"
+                  className="w-full h-full object-cover rounded-lg mb-4"
                 />
               </a>
               <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
                 <img
                   src={selectedProject.image2}
                   alt={selectedProject.title}
-                  className="w-full h-64 object-cover rounded-lg mb-4"
+                  className="w-full h-full object-cover rounded-lg mb-4"
                 />
               </a>
               <a target='_blank' href={selectedProject.link3 ? selectedProject.link3 : selectedProject.image}>
                 <img
                   src={selectedProject.image3}
                   alt={selectedProject.title}
-                  className="w-full h-64 object-cover rounded-lg mb-4"
+                  className="w-full h-full object-cover rounded-lg mb-4"
                 />
               </a>
              </div>
