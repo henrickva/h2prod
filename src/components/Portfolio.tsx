@@ -107,22 +107,22 @@ export default function Portfolio() {
             <p className='my-4'>{selectedProject.description ? selectedProject.description : selectedProject.title }</p>
             <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'}`}>
               <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
-                {selectedProject.video ? <video type="video/mp4" autoPlay loop muted type="video/mp4" src={selectedProject.video}></video> : <img
+                {selectedProject.video ? <video autoPlay loop muted type="video/mp4" src={selectedProject.video}></video> : <img
+                  src={selectedProject.image1}
+                  alt={selectedProject.title}
+                  className="w-full h-full object-cover rounded-lg mb-4"
+                />}
+              </a>
+              <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+                {selectedProject.video2 ? <video autoPlay loop muted type="video/mp4" src={selectedProject.video2}></video> : <img
                   src={selectedProject.image2}
                   alt={selectedProject.title}
                   className="w-full h-full object-cover rounded-lg mb-4"
                 />}
               </a>
               <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
-                {selectedProject.video2 ? <video type="video/mp4" autoPlay loop muted type="video/mp4" src={selectedProject.video2}></video> : <img
-                  src={selectedProject.image2}
-                  alt={selectedProject.title}
-                  className="w-full h-full object-cover rounded-lg mb-4"
-                />}
-              </a>
-              <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
-                {selectedProject.video3 ? <video type="video/mp4" autoPlay loop muted type="video/mp4" src={selectedProject.video3}></video> : <img
-                  src={selectedProject.image2}
+                {selectedProject.video3 ? <video  autoPlay loop muted type="video/mp4" src={selectedProject.video3}></video> : <img
+                  src={selectedProject.image3}
                   alt={selectedProject.title}
                   className="w-full h-full object-cover rounded-lg mb-4"
                 />}
