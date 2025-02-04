@@ -7,7 +7,9 @@ import test4 from '../../assets/mirandaSite.png'
 import portif from '../../assets/nannaBanner.png'
 import portif2 from '../../assets/agiBanner.png'
 import portif3 from '../../assets/dominaxBanner.png'
-import video1 from  '../../assets/LovezinMeduza.mp4'
+import previa1 from  '../../assets/LovezinMeduza.mp4'
+import previa2 from  '../../assets/previa2.mp4'
+import previa3 from  '../../assets/previa1.mp4'
 
 const projects = [
   {
@@ -39,14 +41,17 @@ const projects = [
     title: 'Prévias de Video',
     category: 'Dando alguns spoilers',
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop',
-    description: 'Aplicativo mobile para gestão empresarial'
+    description: 'Aplicativo mobile para gestão empresarial',
+    video:previa1,
+    video2:previa2,
+    video3:previa3,
   },
   {
     title: 'Catálogos',
     category: 'Listando seus serviços',
     image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=2070&auto=format&fit=crop',
     description: 'Criação de marca para startup de tecnologia',
-    video:video1
+   
   }
 ];
 
@@ -101,13 +106,6 @@ export default function Portfolio() {
             <h3 className="text-2xl font-bold text-white mb-2">{selectedProject.title1 ? selectedProject.title1 :selectedProject.title }</h3>
             <p className='my-4'>{selectedProject.description ? selectedProject.description : selectedProject.title }</p>
             <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'}`}>
-              <a target='_blank' href={selectedProject.link ? selectedProject.link : selectedProject.image}>
-                <img
-                  src={selectedProject.image1}
-                  alt={selectedProject.title}
-                  className="w-full h-full object-cover rounded-lg mb-4"
-                />
-              </a>
               <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
                 {selectedProject.video ? <video type="video/mp4" autoPlay loop muted type="video/mp4" src={selectedProject.video}></video> : <img
                   src={selectedProject.image2}
@@ -115,12 +113,19 @@ export default function Portfolio() {
                   className="w-full h-full object-cover rounded-lg mb-4"
                 />}
               </a>
-              <a target='_blank' href={selectedProject.link3 ? selectedProject.link3 : selectedProject.image}>
-                <img
-                  src={selectedProject.image3}
+              <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+                {selectedProject.video2 ? <video type="video/mp4" autoPlay loop muted type="video/mp4" src={selectedProject.video2}></video> : <img
+                  src={selectedProject.image2}
                   alt={selectedProject.title}
-                  className='w-full h-full object-cover rounded-lg mb-4'
-                />
+                  className="w-full h-full object-cover rounded-lg mb-4"
+                />}
+              </a>
+              <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+                {selectedProject.video3 ? <video type="video/mp4" autoPlay loop muted type="video/mp4" src={selectedProject.video3}></video> : <img
+                  src={selectedProject.image2}
+                  alt={selectedProject.title}
+                  className="w-full h-full object-cover rounded-lg mb-4"
+                />}
               </a>
              </div>
           </div>
