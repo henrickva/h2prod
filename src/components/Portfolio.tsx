@@ -4,7 +4,11 @@ import test1 from '../../assets/teste3.png';
 import test2 from '../../assets/maryanaSite.png';
 import test3 from '../../assets/sevenSite.png';
 import test4 from '../../assets/mirandaSite.png'
-import portif from '../../assets/bannerHeather.png'
+import portif from '../../assets/nannaBanner.png'
+import portif2 from '../../assets/agiBanner.png'
+import portif3 from '../../assets/dominaxBanner.png'
+
+
 const projects = [
   {
     title1: 'Sites',
@@ -24,12 +28,12 @@ const projects = [
     category:'Apresetando de forma rápida',
     image: test2,
     description: 'Estratégia digital para lançamento de produto',
-    link:test3,
-    link2:test2,
-    link3:test4,
+    link: portif,
+    link2:portif2,
+    link3:portif3,
     image1: portif,
-    image2: test2,
-    image3: test4,
+    image2: portif2,
+    image3: portif3,
   },
   {
     title: 'Prévias de Video',
