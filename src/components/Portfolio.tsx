@@ -100,7 +100,7 @@ export default function Portfolio() {
             </button>
             <h3 className="text-2xl font-bold text-white mb-2">{selectedProject.title1 ? selectedProject.title1 :selectedProject.title }</h3>
             <p className='my-4'>{selectedProject.description ? selectedProject.description : selectedProject.title }</p>
-            <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'} ${selectedProject.image3 ? 'grid-cols-2':'grid-cols-2 md:grid-cols-2'}`}>
+            <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'}`}>
               <a target='_blank' href={selectedProject.link ? selectedProject.link : selectedProject.image}>
                 <img
                   src={selectedProject.image1}
