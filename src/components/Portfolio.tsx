@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import test1 from '../../assets/teste3.png';
+import cover from '../../assets/cover1.png';
+import cover2 from '../../assets/cover2.png';
+import cover3 from '../../assets/cover3.png';
+import cover4 from '../../assets/cover4.png';
 import test2 from '../../assets/maryanaSite.png';
 import test3 from '../../assets/sevenSite.png';
 import test4 from '../../assets/mirandaSite.png'
@@ -17,7 +20,7 @@ const projects = [
   {
     title1: 'Sites',
     category:'Mostrando ao publico pra que veio',
-    image: test1,
+    image: cover2,
     description: 'Clique na imagem para ser redirecionado para o site',
     link:'https://dommeseventrix.vercel.app/',
     link2:'https://rainhamaryana.vercel.app/',
@@ -30,7 +33,7 @@ const projects = [
   {
     title: 'Banners Redes Sociais',
     category:'Apresetando de forma rápida',
-    image: test1,
+    image: cover,
     description: 'Clique na imagem para ser redirecioando para o perfil relacionado. Caso tenha interesse em ver mais imagens, basta me enviar uma mensagem',
     link: 'https://dommeseventrix.vercel.app/',
     link2:'https://rainhamaryana.vercel.app/',
@@ -42,7 +45,7 @@ const projects = [
   {
     title: 'Prévias de Video',
     category: 'Dando alguns spoilers',
-    image: test1,
+    image: cover4,
     description: 'Ao clicar no video você pode assistir o video em tela cheia e com som :)',
     link: previa1,
     link2:previa2,
@@ -54,7 +57,7 @@ const projects = [
   {
     title: 'Catálogos',
     category: 'Listando seus serviços',
-    image: test1,
+    image: cover3,
     description: 'Clique na capa para poder acessar o catálogo desejados',
     link: 'https://drive.google.com/file/d/1Cw1eRVOh9gg-YJtNR56INLy-zIcZOglO/view?usp=sharing',
     link2:'https://allmylinks.com/link/out?id=13oc4a4-24xjb-ef2nlp',
