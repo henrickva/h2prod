@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Banners Redes Sociais',
     category:'Apresetando de forma rápida',
-    image: test2,
+    image: test1,
     description: 'Clique na imagem para ser redirecioando para o perfil relacionado. Caso tenha interesse em ver mais imagens, basta me enviar uma mensagem',
     link: 'https://dommeseventrix.vercel.app/',
     link2:'https://rainhamaryana.vercel.app/',
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Prévias de Video',
     category: 'Dando alguns spoilers',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop',
+    image: test1,
     description: 'Ao clicar no video você pode assistir o video em tela cheia e com som :)',
     link: previa1,
     link2:previa2,
@@ -53,10 +53,10 @@ const projects = [
   {
     title: 'Catálogos',
     category: 'Listando seus serviços',
-    image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=2070&auto=format&fit=crop',
-    description: 'Criação de marca para startup de tecnologia',
-    link: 'https://dommeseventrix.vercel.app/',
-    link2:'https://rainhamaryana.vercel.app/',
+    image: test1,
+    description: 'Clique na capa para poder acessar o catálogo desejados',
+    link: 'https://drive.google.com/file/d/1Cw1eRVOh9gg-YJtNR56INLy-zIcZOglO/view?usp=sharing',
+    link2:'https://allmylinks.com/link/out?id=13oc4a4-24xjb-ef2nlp',
     image1: capa,
     image2: capa,
   }
