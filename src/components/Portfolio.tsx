@@ -10,6 +10,7 @@ import portif3 from '../../assets/dominaxBanner.png'
 import previa1 from  '../../assets/LovezinMeduza.mp4'
 import previa2 from  '../../assets/previa2.mp4'
 import previa3 from  '../../assets/previa1.mp4'
+import capa from '../../assets/Capa-1.png'
 
 const projects = [
   {
@@ -51,7 +52,8 @@ const projects = [
     category: 'Listando seus serviços',
     image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=2070&auto=format&fit=crop',
     description: 'Criação de marca para startup de tecnologia',
-   
+    image1: capa,
+    image2: capa,
   }
 ];
 
@@ -105,7 +107,7 @@ export default function Portfolio() {
             </button>
             <h3 className="text-2xl font-bold text-white mb-2">{selectedProject.title1 ? selectedProject.title1 :selectedProject.title }</h3>
             <p className='my-4'>{selectedProject.description ? selectedProject.description : selectedProject.title }</p>
-            <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'}`}>
+            <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'} ${selectedProject.image3 ? 'grid grid-cols-1':'flex w-full items-center justify-center'}`}>
               <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
                 {selectedProject.video ? <video className='rounded-lg' autoPlay loop muted type="video/mp4" src={selectedProject.video}></video> : <img
                   src={selectedProject.image1}
@@ -120,7 +122,7 @@ export default function Portfolio() {
                   className="w-full h-full object-cover rounded-lg mb-4"
                 />}
               </a>
-              <a className='' target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+              <a className={` ${selectedProject.image3 || selectedProject.video3? 'block':'hidden'}`} target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
                 {selectedProject.video3 ? <video className='rounded-lg' autoPlay loop muted type="video/mp4" src={selectedProject.video3}></video> : <img
                   src={selectedProject.image3}
                   alt={selectedProject.title}
