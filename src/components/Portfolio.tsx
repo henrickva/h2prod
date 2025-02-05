@@ -33,7 +33,7 @@ const projects = [
     description: 'Clique na imagem para ser redirecioando para o perfil relacionado. Caso tenha interesse em ver mais imagens, basta me enviar uma mensagem',
     link: 'https://dommeseventrix.vercel.app/',
     link2:'https://rainhamaryana.vercel.app/',
-    link3:'https://rainhamiranda.vercel.app/',
+    link3:'https://dominax.com.br/',
     image1: portif,
     image2: portif2,
     image3: portif3,
@@ -42,7 +42,10 @@ const projects = [
     title: 'Prévias de Video',
     category: 'Dando alguns spoilers',
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop',
-    description: 'Aplicativo mobile para gestão empresarial',
+    description: 'Ao clicar no video você pode assistir o video em tela cheia e com som :)',
+    link: previa1,
+    link2:previa2,
+    link3:previa3,
     video:previa1,
     video2:previa2,
     video3:previa3,
@@ -52,6 +55,8 @@ const projects = [
     category: 'Listando seus serviços',
     image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=2070&auto=format&fit=crop',
     description: 'Criação de marca para startup de tecnologia',
+    link: 'https://dommeseventrix.vercel.app/',
+    link2:'https://rainhamaryana.vercel.app/',
     image1: capa,
     image2: capa,
   }
@@ -108,7 +113,7 @@ export default function Portfolio() {
             <h3 className="text-2xl font-bold text-white mb-2">{selectedProject.title1 ? selectedProject.title1 :selectedProject.title }</h3>
             <p className='my-4'>{selectedProject.description ? selectedProject.description : selectedProject.title }</p>
             <div className={`grid gap-8 ${selectedProject.title1 ? 'grid-cols-1 ':'grid-cols-1 md:grid-cols-3'} ${selectedProject.image3 ? 'grid grid-cols-1':'flex w-full items-center justify-center'}`}>
-              <a target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+              <a target='_blank' href={selectedProject.link ? selectedProject.link : selectedProject.image}>
                 {selectedProject.video ? <video className='rounded-lg' autoPlay loop muted type="video/mp4" src={selectedProject.video}></video> : <img
                   src={selectedProject.image1}
                   alt={selectedProject.title}
@@ -122,7 +127,7 @@ export default function Portfolio() {
                   className="w-full h-full object-cover rounded-lg mb-4"
                 />}
               </a>
-              <a className={` ${selectedProject.image3 || selectedProject.video3? 'block':'hidden'}`} target='_blank' href={selectedProject.link2 ? selectedProject.link2 : selectedProject.image}>
+              <a className={` ${selectedProject.image3 || selectedProject.video3? 'block':'hidden'}`} target='_blank' href={selectedProject.link3 ? selectedProject.link3 : selectedProject.image}>
                 {selectedProject.video3 ? <video className='rounded-lg' autoPlay loop muted type="video/mp4" src={selectedProject.video3}></video> : <img
                   src={selectedProject.image3}
                   alt={selectedProject.title}
