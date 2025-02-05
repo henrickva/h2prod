@@ -11,6 +11,7 @@ import previa1 from  '../../assets/LovezinMeduza.mp4'
 import previa2 from  '../../assets/previa2.mp4'
 import previa3 from  '../../assets/previa1.mp4'
 import capa from '../../assets/Capa-1.png'
+import capa2 from '../../assets/Capa-2.png'
 
 const projects = [
   {
@@ -58,7 +59,7 @@ const projects = [
     link: 'https://drive.google.com/file/d/1Cw1eRVOh9gg-YJtNR56INLy-zIcZOglO/view?usp=sharing',
     link2:'https://allmylinks.com/link/out?id=13oc4a4-24xjb-ef2nlp',
     image1: capa,
-    image2: capa,
+    image2: capa2,
   }
 ];
 
