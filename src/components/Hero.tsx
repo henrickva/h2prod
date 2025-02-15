@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
         <a href='#serviços'>
         <button className="bg-black hover:bg-gradient-to-r ease-in-out from-red-400 to-orange-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
-          Conheça nosso trabalho
+          Conheça meu trabalho
         </button>
         </a>
       </div>

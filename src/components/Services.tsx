@@ -13,6 +13,13 @@ const services = [
       <br />
       <p>No mundo digital em que vivemos, a identidade visual de uma marca é um dos elementos mais importantes para se destacar e conquistar o público. É aí que entra o meu trabalho: criar banners e logos que não apenas chamem a atenção, mas também transmitam a essência da sua marca de forma clara e impactante.</p>
       <br />
+      <p><strong>Preços:</strong></p>
+      <ul>
+        <li>Banners: R$35,00</li>
+        <li>Capas: R$30,00</li>
+        <li>Logos: R$100,00</li>
+        <li>Catálogos: R$150,00</li>
+      </ul>
       <br />
       <p><strong>Criação de Banners</strong></p>
       <p>Os banners são peças fundamentais para a comunicação visual nas redes sociais, sites e campanhas publicitárias. Eles servem como cartões de visita digitais, atraindo o olhar do público e transmitindo mensagens de forma rápida e eficiente. No meu trabalho, eu foco em:</p>
@@ -40,6 +47,11 @@ const services = [
       <p><strong>Serviços Oferecidos:</strong></p>
       <p>Sites feitos por programação e sites com Wordpress</p>
       <br />
+      <p><strong>Preços:</strong></p>
+      <ul>
+        <li>Sites Programados: R$1.500,00</li>
+        <li>Sites WordPress: R$1.000,00</li>
+      </ul>
       <br />
       <p><strong>Sites no geral</strong></p>
       <p>Programo sites modernos, responsivos e funcionais, focados em resultados. Meu trabalho inclui:</p>
@@ -62,6 +74,12 @@ const services = [
       <p><strong>Serviços Oferecidos:</strong></p>
       <p>Edições e cortes de video, produção de prévias, borrar rostos ou tatuagens.Para algum serviço que não listo aqui, basta me mandar uma mensagem para ver a viabilidade de entrega</p>
       <br />
+      <p><strong>Preços:</strong></p>
+      <ul>
+        <li>Edições videos +30 min(cortes): R$150,00</li>
+        <li>Prévias: R$50,00</li>
+        <li>Blur e cortes: R$180,00</li>
+      </ul>
       <br />
       <p>Atualmente, os vídeos são uma das formas mais eficazes de engajar o público e promover perfis. Meu trabalho é criar edições de vídeos criativas e profissionais, especialmente pensadas para redes sociais,onde chamam a atenção e geram resultados.</p>
       <br />
@@ -88,6 +106,11 @@ const services = [
       <p><strong>Serviços Oferecidos:</strong></p>
       <p>Ensaios sensuais e ensaios para plataformas como Onlyfans, Privacy e etc...</p>
       <br />
+      <p><strong>Preços:</strong></p>
+      <ul>
+        <li>Ensaios OnlyFans/Privacy: A combinar</li>
+        <li>Ensaios Boudoir: A combinar </li>
+      </ul>
       <br />
       <p><strong>Ensaios Fotográficos</strong></p>
       <p>A fotografia é a arte de capturar momentos e transformá-los em imagens que contam histórias. Meu trabalho inclui:</p>
